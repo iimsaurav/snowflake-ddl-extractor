@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snow-ddl-extractor"
+version = "0.1.0"
+description = "Extract DDL scripts from a Snowflake database into a structured local directory."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Saurav"},
+]
+keywords = ["snowflake", "ddl", "extract", "schema", "database"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Database",
+]
+dependencies = [
+    "snowflake-connector-python>=3.6.0",
+    "click>=8.0",
+    "cryptography>=41.0",
+]
+
+[project.scripts]
+snow-extract = "snow_ddl_extractor.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/imsaurav/snowflake-ddl-extractor"
+Issues = "https://github.com/imsaurav/snowflake-ddl-extractor/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
