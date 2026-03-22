@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "snow-ddl-extractor"
+name = "snowflake-ddl-extractor"
 version = "0.1.0"
 description = "Extract DDL scripts from a Snowflake database into a structured local directory."
 readme = "README.md"
