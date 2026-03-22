@@ -1,4 +1,4 @@
-# snow-ddl-extractor
+# snowflake-ddl-extractor
 
 A Python CLI tool that connects to a Snowflake database, extracts DDL scripts for all objects using `GET_DDL()`, and saves them into a structured local directory tree mirroring the database hierarchy.
 
@@ -16,7 +16,7 @@ A Python CLI tool that connects to a Snowflake database, extracts DDL scripts fo
 ## Installation
 
 ```bash
-pip install snow-ddl-extractor
+pip install snowflake-ddl-extractor
 ```
 
 Or install from source:
