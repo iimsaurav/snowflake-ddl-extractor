@@ -30,12 +30,15 @@ dependencies = [
     "cryptography>=41.0",
 ]
 
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
 [project.scripts]
 snow-extract = "snow_ddl_extractor.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/imsaurav/snowflake-ddl-extractor"
-Issues = "https://github.com/imsaurav/snowflake-ddl-extractor/issues"
+Homepage = "https://github.com/iimsaurav/snowflake-ddl-extractor"
+Issues = "https://github.com/iimsaurav/snowflake-ddl-extractor/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
